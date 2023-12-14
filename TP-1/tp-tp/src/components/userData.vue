@@ -7,7 +7,7 @@
             <input  v-model="enteredName" class="form-control form-control-sm" type="text" placeholder="Votre nom" aria-label=".form-control-sm example">
         </div>
         <div class="mb-3">
-            <input v-model="enteredAge" class="form-control form-control-sm" type="text" placeholder="Votre age" aria-label=".form-control-sm example">
+            <input v-model="enteredAge" class="form-control form-control-sm" type="number" placeholder="Votre age" aria-label=".form-control-sm example">
         </div>       
         <div class="mb-3">
             <input v-model="enteredMail" class="form-control form-control-sm" type="text" placeholder="Votre mail" aria-label=".form-control-sm example">
