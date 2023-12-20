@@ -12,7 +12,7 @@ class ArticleDataService{
         return db.push(article);
     };
     update(key, value) {
-        db.child(key).update(value);
+        return db.child(key).update(value);
     };
     delete(key){
         return db.child(key).remove();

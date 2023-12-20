@@ -18,6 +18,11 @@ import {createWebHistory, createRouter} from 'vue-router'
         path : "/add",
         name : "add",
         component : () => import ("./components/AddArticle.vue")
+    },
+    {
+        path : "/:pathMatch(.*)",
+        name : "notFound",
+        component : () => import ("./components/notFound.vue")
     }
 ]
 
