@@ -11,6 +11,7 @@
         </router-link>
         <router-link to="/articles" class="nav-link active m-2" aria-current="page" href="#">Articles</router-link>
         <router-link to="/add" class="nav-link m-2" href="#">Ajouter</router-link>
+        <router-link to="/Users" href="#">Liste</router-link>
       </nav>
       <!--! La vue du router , là ou vont être affiché les composant que l'on appelle via les routes -->
       <router-view />

@@ -52,7 +52,7 @@ export default {
                 console.error("There was an error!", error);
         });
     }
-    }
+}
 
 </script>
 
@@ -61,7 +61,7 @@ export default {
         <div class="groupe">
             <div v-for="(element, id) in pokemons" class="bloc">
                <Pokemon :element="element"> </Pokemon>
-               <Pokemon :element="groupEvol(id+1).target" v-if="groupEvol(id+1).target.apiPreEvolution && (groupEvol(id+1).target.apiPreEvolution.name == element.name)"></Pokemon>
+               <Pokemon :element="groupEvol(id+1)" v-if="groupEvol(id+1).apiPreEvolution && (groupEvol(id+1).apiPreEvolution.name == element.name)"></Pokemon>
             </div>
         </div>
     </div>
